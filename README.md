@@ -1,6 +1,14 @@
 # back
 
-[環境構築](https://fresh-rhodium-639.notion.site/efe628f3b49449e082670e253c0a165f)はこちら
+**ブランチ命名規則**  
+- ```feature/#(Issuesの番号)_(内容)```  
+例：```feature/#1_create_database```
+- 日本語禁止
+
+developブランチに移動してから以下を実行．  
+作成&移動コマンド：```git checkout -b feature/#(Issuesの番号)_(内容)```
+
+<hr>
 
 <details><summary> よく使う Git コマンド </summary>
 
@@ -26,3 +34,5 @@
 | <span style="color: #ffd1a3; ">git branch -r </span>                       |            現在のリモートブランチの確認            |
 
 </details>
+
+[環境構築](https://fresh-rhodium-639.notion.site/efe628f3b49449e082670e253c0a165f)はこちら
