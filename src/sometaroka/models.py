@@ -5,7 +5,7 @@ from django.db import models
 
 #ここから記述しました。もうちょっと余裕もって依頼して欲しかったな。朝にバイトあるし、明日イベント運営しなきゃいけないんだよ？
 #正直私って結構忙しい部類の人間だと思うんだ、そんな私にばっか何でもかんでもやってもらいすぎだともうし、こんな構造になっているのは
-#絶対おかしいと思うんだよ。いかがでしょうか
+#絶対おかしいと思うんだよ。いかがでしょうか　←　ごめんなさい
 from django.contrib.auth.models import AbstractUser
 from django.utils import timezone
 import uuid
