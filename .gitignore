@@ -1,7 +1,10 @@
 django/.env
 mysql/*
 src/app/__pycache__/*
+src/sometaroka/__pycache__/*
+src/sometaroka/migrations
 static/*
 
 # misc
 .DS_Store
+
