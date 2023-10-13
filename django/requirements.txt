@@ -1,3 +1,5 @@
 Django
 uwsgi
 PyMySQL
+channels
+daphne
