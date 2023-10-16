@@ -35,3 +35,8 @@ services:
       - ./django/.env
     depends_on:
       - mysql
+
+  redis:
+    image: redis:alpine
+    expose:
+      - "6379"

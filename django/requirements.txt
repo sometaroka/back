@@ -3,3 +3,5 @@ uwsgi
 PyMySQL
 channels
 daphne
+redis
+channels_redis
