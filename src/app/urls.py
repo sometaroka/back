@@ -16,12 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url, include
-from sometaroka.urls import router as test_router
+
+# from sometaroka.urls import router as test_router
 
 
 urlpatterns = [
-    # path("admin/", admin.site.urls),
-    # path("", include("sometaroka.urls")),
-    url(r"admin/", admin.site.urls),
-    url(r"", include(test_router.urls)),
+    path("admin/", admin.site.urls),
+    path("", include("sometaroka.urls")),
+    # path(r"admin/", admin.site.urls),
+    # path(r"", include(test_router.urls)),
 ]

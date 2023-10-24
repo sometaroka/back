@@ -1,11 +1,12 @@
 from django.contrib import admin
 from django.urls import path
 from . import views
-from rest_framework import routers
-from .views import apiTest
+
+# from rest_framework import routers
+# from .views import apiTest
 
 
-# urlpatterns = [path("test/", views.apiTest.as_view(), name="test")]
+urlpatterns = [path("tests/", views.apiTest.as_view(), name="test")]
 
-router = routers.DefaultRouter()
-router.register(r"tests", apiTest)
+# router = routers.DefaultRouter()
+# router.register(r"tests", apiTest)
