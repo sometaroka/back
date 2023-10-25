@@ -17,7 +17,14 @@ class apiTest(ListCreateAPIView):
     # APIがデータを返すためのデータ変換ロジックを定義
     serializer_class = SampleSerializer
 
-    filter_fields = ("message_id", "massege_date", "intnation", "user", "talk_id")
+    filter_fields = (
+        "message_id",
+        "message_data",
+        "massege_date",
+        "intnation",
+        "user",
+        "talk_id",
+    )
 
     # 認証
     # permission_classes = []
