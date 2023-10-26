@@ -18,12 +18,9 @@ class apiTest(ListCreateAPIView):
     serializer_class = SampleSerializer
 
     filter_fields = (
-        "message_id",
-        "message_data",
-        "massege_date",
-        "intnation",
-        "user",
-        "talk_id",
+        "msg_id",
+        "msg_data",
+        "msg_date",
     )
 
     # 認証
