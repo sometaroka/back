@@ -10,7 +10,7 @@ from rest_framework import viewsets, filters
 from .serializers import SampleSerializer  # APIで渡すデータをJSON,XML変換
 
 
-class apiTest(ListCreateAPIView):
+class apiGetTest(ListCreateAPIView):
     # 対象とするモデルのオブジェクトを定義
     queryset = MessagesModel.objects.all()
 

@@ -6,7 +6,7 @@ from . import views
 # from .views import apiTest
 
 
-urlpatterns = [path("tests/", views.apiTest.as_view(), name="test")]
+urlpatterns = [path("tests/", views.apiGetTest.as_view(), name="test")]
 
 # router = routers.DefaultRouter()
 # router.register(r"tests", apiTest)
