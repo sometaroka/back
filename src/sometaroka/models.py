@@ -131,4 +131,11 @@ class MessagesModel(models.Model):
     user = models.ForeignKey(Users,on_delete=models.CASCADE,null=True)
     #トークID
     talk_id = models.ForeignKey(TalksModel,on_delete=models.CASCADE,null=True)
+    
+    translated_data = models.TextField(null=True)
 
+    
+#翻訳
+class translatedModel(models.Model):
+    message_data = models.TextField()
+    translated_data = models.TextField()
