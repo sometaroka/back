@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hougen-trans",
+  "private_key_id": "6d7e0d024d8dec1e4b02eaca5cb9e07fe18b6d43",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDZniNZG/idW1og\n2+bqDJnnJZBUCvo+kJT6ZSrRsocm57gvbSeBeZXfvzqp3Uxd+EEXZxs+KpOs8IdJ\nfzIOddDgK3PFRjBqfq7UUlT/skjjrJ1fo+H0rJ3hIGCfFwd9Z4MfiJfjvAeTg9hM\ndmUFdRwl40lf1UzT/XWlHyc4l8SqvjU8+OOSCaA+Shshv5KjUpQ5KGWfC1KbfIaA\nwrq6MDfyODZaqJmQmniAttNfEEmcv4QsX8cybZf+DFUNy0uaf6+D0ySBqAgFnrWP\nNcDwoOBKI41Hg2JtYlzlH5zBES0cImhMpwHa+gNSKmEO9rm5PkPAXBHurr5f33Xb\nC/h740LbAgMBAAECggEABr1gy+H+RzqsyYcu4F3OixhLO7//gjOK6MG1P0mxd4op\nyHI98HvIWjsmASNWud4ZuDSqOn/UhSRClGCl09dgm4xM96drPJA62uw5ogeur3NX\npKHtczJraZDNwNMp0g3ZfH8H4wTlZ2Ug5TTmm7lF2Z+om7VhvbO17v6HSPCVezXF\nNb71xXxOqhDCTEsVf7hqmA5kYHI3JZE0ZkQVrH3GQdbI906teRSJLuNsoX6WYhy/\nRSedgpS8G4R/G6WuGsUHF2ob6eNk33sDuOi83gmLsW7fi3ziCOwwdh9IISopT75o\nVSCAZLdp2zbPfihCj8arbhqAswjSOI9SfKsy53qR7QKBgQD+3ScSh6hoSsuSPmKS\nAgaVE+rjWaQdSfViCiaiuWzdz8N9AAshupYVnD/0Wisb1Z6yvZ9Amca+Kp22bFNl\n9P3FSPUDusLNWd8eDK9jecixaatF5Gwiq8HWy82r7R38PHXBx6GYNdlr13Ov5TLA\nizR+sMy9YKdsr7HtPrRaCf0oNwKBgQDalnsKOW+K/i6+EIRjCiyLcx4a47bYSw7k\nkgQbICIDWImZ9UMVsuINzV6qqMECnFWKF8nzTIEJ2RLY8E9AusVf6ZbnGlLiLK8b\nWxZtw0fTBJxIkyPIG9IVta9o/YjkGmvcfz2D1nBSbGmRclU8R/hISb9PmJ7cozk4\n7bDdWF5gfQKBgQDyX3TJ/XLdg8vnDycEfaKu4VsuzM/y/qO6kba+Z6KtqujZFlJ/\nyAb1FDwJ8Dow5U1f5E7vy44iyTplAs2pF3zCwqgn3NNnIMG7vQqKioWemsRD2oAv\n1LGpyPWWPBCZERJXr7bwnr1e/m1JaKmETJ4moZKDwshV5xxJZ6lyOy+irwKBgQCM\nYKeT4V7o/GQ4W5Mpp5cD12I2EpeSQGHIGJ3abcBqNano3cG/ZaoXAxUQtF9/tbaZ\ngL2JKlCUanvYJjw/bbLj7bejoxwndFrgTpcQ1qCBvCxBz3zjPjqlBpEn8+q90toC\nORTgXg60YDtL1Qk4NWAVzIa4L2OWfpx5GuzCucWiYQKBgECFxQCXxjJmuP2QnXt7\nO0gGAKVjh6Kg0XVL1A4T2PO3yz3pNgZwxtNFgz+QdkJFWxqw8dZ0vA2tdghHnN48\nbObW4fLzcQwNqPe4O32G+kIw4Djy1tlsO1pVMUtzBmXI0KRwQXAUSBoW7iu+eaks\nqte21C66pkSImyIpJo7y97Oa\n-----END PRIVATE KEY-----\n",
+  "client_email": "ktunakai@hougen-trans.iam.gserviceaccount.com",
+  "client_id": "104919498153666408622",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ktunakai%40hougen-trans.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
