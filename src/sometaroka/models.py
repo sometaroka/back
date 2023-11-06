@@ -136,6 +136,6 @@ class MessagesModel(models.Model):
 
     
 #翻訳
-class translatedModel(models.Model):
-    message_data = models.TextField()
-    translated_data = models.TextField()
+class TranslatedText(models.Model):
+    original_text = models.TextField()
+    translated_text = models.TextField()

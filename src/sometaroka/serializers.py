@@ -1,6 +1,6 @@
 #  APIの出力をJSON,XMLデータに変換
 from rest_framework import serializers
-from .models import MessagesModel,translatedModel
+from .models import MessagesModel,TranslatedText
 
 
 class SampleSerializer(serializers.ModelSerializer):
@@ -9,8 +9,7 @@ class SampleSerializer(serializers.ModelSerializer):
         # fields = ["message_id", "message_data", "massege_date"]  # API上に表示するモデルのデータ項目
         fields = '__all__'  # 指定せず全ての項目をレスポンスする場合
 
-class translateSerializer(serializers.ModelSerializer):
+class TranslatedTextSerializer(serializers.ModelSerializer):
     class Meta:
-        model = translatedModel  # 呼び出すモデル
-        # fields = ["message_id", "message_data", "massege_date"]  # API上に表示するモデルのデータ項目
-        fields = '__all__' # 指定せず全ての項目をレスポンスする場合
+        model = TranslatedText
+        fields = ['original_text', 'translated_text']

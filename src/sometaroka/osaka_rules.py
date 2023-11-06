@@ -1,5 +1,8 @@
 
+from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from .models import TranslatedText
+from .serializers import TranslatedTextSerializer
 from .part_of_speech import is_verb_before_nai, is_verb_before_nai2, is_pronoun, is_noun, is_postposition, is_adjective, is_Adverb
 import gspread
 import MeCab
@@ -9,13 +12,15 @@ import gspread.exceptions
 # 大阪弁の翻訳
 
 
-def translate_text_osaka(input_text):
-    if not isinstance(input_text, str):
-       raise ValueError("input_text is not a string: {}".format(repr(input_text)))
-    
-    mecab = MeCab.Tagger("-Ochasen")
+@api_view(['POST'])
+def translate_text_osaka(request):
+    input_text = request.data.get("text", "")
+    # MeCabを使って文章を単語に分割
+    mecab = MeCab.Tagger(
+        "-Ochasen ")
     parsed_lines = mecab.parse(input_text).split('\n')
-    words = [line.split('\t')[0] for line in parsed_lines if line and line != 'EOS']
+    words = [line.split('\t')[0]
+             for line in parsed_lines if line and line != 'EOS']
 
     # 単語ごとに変換処理を行う
     # ・方針
@@ -784,9 +789,12 @@ def translate_text_osaka(input_text):
         translated_sentence.append(translated_word)
 
         # 翻訳後の文章を結合
-    translated_data = ' '.join(translated_sentence)
+    translated_text = ' '.join(translated_sentence)
 
-    return translated_data  # 単に文字列として翻訳データを返す
+    translation_instance = TranslatedText(
+        original_text=input_text, translated_text=translated_text)
+    translation_instance.save()
 
- 
+    serializer = TranslatedTextSerializer(translation_instance)
 
+    return Response(serializer.data)
