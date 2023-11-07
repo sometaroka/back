@@ -182,7 +182,7 @@ def translate_text_osaka(request):
                 else:
                     word = "ん"
 
-      # 「だよ」の変換処理
+    # 「だよ」の変換処理
         if word == "だ":
             if i < len(words) - 1 and words[i+1] == "よ":
                 # 「だよね」、「だよな」の処理
@@ -770,8 +770,8 @@ def translate_text_osaka(request):
     creds = ServiceAccountCredentials.from_json_keyfile_name(
         'hougen-trans-6d7e0d024d8d.json', scope)
     client = gspread.authorize(creds)
-    sheet = client.open_by_key(
-        '166R1W9WwkelPu861pCQkjIfsmWF7xuIrqUy4BpB_ixY').sheet1
+    sheet = client.open_by_key('166R1W9WwkelPu861pCQkjIfsmWF7xuIrqUy4BpB_ixY').worksheet('sheet2')
+
 
     # マッピングの取得
     translations = sheet.get_all_records()
