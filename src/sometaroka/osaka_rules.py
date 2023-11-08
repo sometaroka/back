@@ -909,6 +909,6 @@ def translate_text_osaka(input_text):
         translated_sentence.append(translated_word)
 
         # 翻訳後の文章を結合
-    translated_data = " ".join(translated_sentence)
+    translated_data = "".join(translated_sentence)
 
     return translated_data  # 単に文字列として翻訳データを返す
