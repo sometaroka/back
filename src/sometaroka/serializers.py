@@ -1,6 +1,6 @@
 #  APIの出力をJSON,XMLデータに変換
 from rest_framework import serializers
-from .models import MessagesModel
+from .models import MessagesModel, TalksModel
 
 from .osaka_rules import translate_text_osaka
 
@@ -26,3 +26,15 @@ class SampleSerializer(serializers.ModelSerializer):
 
 def testFunction(str):
     return str + "fnc_test"
+
+
+class TalkSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TalksModel  # 呼び出すモデル
+        # fields = ["message_id", "message_data", "massege_date"]  # API上に表示するモデルのデータ項目
+        fields = "__all__"  # 指定せず全ての項目をレスポンスする場合
+
+    # def create(self, validated_data):
+    #     newTalk = TalksModel.objects.create(talk_id=validated_data["talk_id"])
+    #     newTalk.save()
+    #     return newTalk
