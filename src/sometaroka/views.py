@@ -12,7 +12,9 @@ from .serializers import SampleSerializer, TalkSerializer  # APIで渡すデー�
 
 class apiGetTest(ListCreateAPIView):
     # 対象とするモデルのオブジェクトを定義
-    queryset = MessagesModel.objects.all()
+    # queryset = MessagesModel.objects.all()
+
+    queryset = MessagesModel.objects.all().order_by('massege_date')
 
     # APIがデータを返すためのデータ変換ロジックを定義
     serializer_class = SampleSerializer
