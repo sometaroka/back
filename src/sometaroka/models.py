@@ -22,6 +22,11 @@ class RoomsModel(models.Model):
 class MessagesModel(models.Model):
     msg_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     msg_data = models.CharField(max_length=100)
+    msg_data1 = models.CharField(max_length=100)
+    msg_data2 = models.CharField(max_length=100)
+    msg_data3 = models.CharField(max_length=100)
+    msg_data4 = models.CharField(max_length=100)
+    msg_data5 = models.CharField(max_length=100)
     msg_date = models.DateTimeField(auto_now_add=True)
     room_id = models.ForeignKey(RoomsModel, on_delete=models.CASCADE,null=True)
     user = models.ForeignKey(UsersModel, on_delete=models.CASCADE,null=True)
