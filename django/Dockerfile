@@ -8,4 +8,28 @@ RUN pip install -r requirements.txt
 RUN pip install djangorestframework
 RUN pip install django-filter
 
+# add
+
+# MeCabと関連パッケージをインストール
+# パッケージのアップデートと基本的なツールのインストール
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    libffi-dev \
+    python3-dev
+    
+RUN apt-get install -y \
+    mecab \
+    libmecab-dev \
+    mecab-ipadic-utf8
+
+# mecab-python3をインストール
+RUN which mecab-config
+RUN pip install mecab-python3
+
+RUN pip install gspread
+RUN pip install oauth2client
+
+#####################
+
 ADD . /code/

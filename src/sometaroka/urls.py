@@ -6,7 +6,10 @@ from . import views
 # from .views import apiTest
 
 
-urlpatterns = [path("tests/", views.apiGetTest.as_view(), name="test")]
+urlpatterns = [
+    path("tests/", views.apiGetTest.as_view(), name="test"),
+    path("talk_rooms/", views.getTalkRooms.as_view(), name="talk_rooms"),
+]
 
 # router = routers.DefaultRouter()
 # router.register(r"tests", apiTest)
